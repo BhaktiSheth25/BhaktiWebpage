@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Latest compiled and minified CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+		
+
+		<script>
+		function validate ()
+		{
+			var username = document.getElementById("uname");
+			var name = document.getElementById("name");
+			var name = document.getElementById("surname");
+
+			if(username.value.trim() == "" || name.value.trim() == "" || surname.value.trim() == "")
+			{
+				alert("No blank values allowed")
+				return false;
+			}
+			else 
+			{
+				true;
+			}
+		}
+		</script>
+
+		<title>Bootstrap</title>
+
+		<style>
+			.text 
+				{
+					position: absolute;
+					top: 30vw;
+					left: 5vw;
+					color: white;
+					font-size: 4vw;
+					border: 1.5px solid green;
+					padding: 1%;
+					font-weight: lighter;
+				}
+
+			.text1 
+				{
+					position: absolute;
+					top: 45vw;
+					left: 16vw;
+					color: white;
+					font-size: 1.5vw;
+					font-weight: lighter;
+					line-height: 10%;
+					text-align: center;
+				}
+		</style>
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<!-- Nav bar -->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+				<a class="navbar-brand px-3">BS</a>
+				<button
+					class="navbar-toggler"
+					data-target="#my-nav"
+					data-toggle="collapse"
+					aria-controls="my-nav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div id="my-nav" class="collapse navbar-collapse">
+					<ul class="navbar-nav m-auto">
+						<li class="nav-item px-2">
+							<a
+								class="nav-link active"
+								href="#Home"
+								tabindex="-1"
+								aria-disabled="true"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item px-2">
+							<a
+								class="nav-link active"
+								href="#About"
+								tabindex="-1"
+								aria-disabled="true"
+								>About</a
+							>
+						</li>
+						<li class="nav-item px-2">
+							<a
+								class="nav-link active"
+								href="#Blog"
+								tabindex="-1"
+								aria-disabled="true"
+								>Blog</a
+							>
+						</li>
+						<li class="nav-item px-2">
+							<a
+								class="nav-link active"
+								href="#Gallery"
+								tabindex="-1"
+								aria-disabled="true"
+								>Gallery</a
+							>
+						</li>
+						<li class="nav-item px-2">
+							<a
+								class="nav-link active"
+								href="#Games"
+								tabindex="-1"
+								aria-disabled="true"
+								>Games</a
+							>
+						</li>
+						<li class="nav-item px-2">
+							<a
+								class="nav-link active"
+								href="#Contact Me"
+								tabindex="-1"
+								aria-disabled="true"
+								>Contact Me</a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+		<!-- home page -->
+			<div id="Home">
+				<img
+					src="./Images/IndexBackground.jpg"
+					width="100%"
+					style="opacity: 95%;"
+					alt=""
+				/>
+
+				<div id="Home">
+					<h1 class="text">HELLO! <b>I'M</b> Bhakti Sheth</h1>
+
+					<h3 class="text1">
+						Welcome to my website!
+						<p style="padding: 1.5%"></p>
+						I'm a Communication Designer
+					</h3>
+				</div>
+			</div>
+
+		<!-- About me -->
+			<div id="About" class="row m-0 p-4" style="width:100%; background-color:#15191A;">
+				<div class="col-5 p-5 m-auto">
+					<img src="./Images/AboutPic1.jpeg.jpg" width="100%" style="border:1px solid green;" alt="" />
+				</div>
+				<div style="height:100%;" class="col-7 p-5 m-auto ">
+					<h4 style="color:green; font-size: 2vw;">Discover</h4>
+					<h2 style="color:white; font-size: 3vw;">About Me</h2>
+					<h5 style="border: 2px solid green; width: 10%"></h5>
+
+					<p style="text-align: justify; color: white; font-size: 1vw;">
+						My name is Bhakti Sheth. I'm a second year communication designer
+						student who is currently studying in ISDI, School of Design and
+						Innovation.
+						<br />
+						I'm someone who is always findings ways to challenge and develop my
+						creative skill. I have always aimed at working in a industry that will
+						enable me to challenge my skills and allow me me to adapt new skills
+						so that I am well updated with what's coming new to the society and
+						also helps me to sharpren myself. Besides this, I love to dance,
+						listen to music, paint and socialize with people around me.
+						<p></p>
+						<b style="color:green; font-size: 1vw;"> Professional Skills </b> <br>
+						<p style="color:white; font-size: 1vw;"> Adobe Photoshop <br>
+						Adobe Illustrator <br>
+						Basics of Adobe After Effects <br>
+						Can work under pressure <br>
+						Work well individually and in a team </p>
+						<p></p>
+						<b style="color:green; font-size: 1vw;"> Roles and Responsibilities </b> <br />
+						<p style="color:white; font-size: 1vw;">Team Spirit <br />
+						Creative team member <br />
+						Submitting things within dealine</p>
+					</p>
+				</div>
+			</div>
+
+		<!-- Blog (part 1) -->
+		<div id="Blog" class="row m-auto p-4" style="width:100%; background-color:#15191af0;">
+			<h1 style="color: White; text-align: center; padding-top: 5%; font-size: 2.5vw;">Know Me Better</h1>
+			<h5 style="border: 2px solid green; width: 7%; margin-left: 43%;"></h5>
+			<p></p>
+			<div style="width:80%; margin: auto;">
+				<nav class="navbar navbar-expand-sm navbar-dark">
+					<div class="container-fluid justify-content-center">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link active" href="#Photography"><h5 style="font-size: 1vw;">Photography</h5></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#Travelling"><h5 style="font-size: 1vw;">Travelling</h5></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#Special Day"><h5 style="font-size: 1vw;">Special Day</h5></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#Music"><h5 style="font-size: 1vw;">Music</h5></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="#Sketches"><h5 style="font-size: 1vw;">Sketches</h5></a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<div id="Blog" class="row m-auto p-5 pt-3" style="width:100%; background-color:#15191af0;">
+			<div id="Photography" class="col-4 m-auto">
+				<div id="demo1" class="carousel slide" data-bs-ride="carousel">
+					<!-- Indicators/dots -->
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+						<button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+						<button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+						<button type="button" data-bs-target="#demo1" data-bs-slide-to="3"></button>
+						<button type="button" data-bs-target="#demo1" data-bs-slide-to="4"></button>
+						<button type="button" data-bs-target="#demo1" data-bs-slide-to="5"></button>
+						<button type="button" data-bs-target="#demo1" data-bs-slide-to="6"></button>							<button type="button" data-bs-target="#demo1" data-bs-slide-to="7"></button>
+					</div>
+						
+					<!-- The slideshow/carousel -->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+						<img src="./Images/1.jpeg" alt="" class="d-block m-auto" style="width:90%">
+						</div>
+						<div class="carousel-item">
+						<img src="./Images/2.jpeg" alt="" class="d-block m-auto " style="width:90%">
+						</div>
+						<div class="carousel-item">
+						<img src="./Images/3.jpeg" alt="" class="d-block m-auto" style="width:90%">
+						</div>
+						<div class="carousel-item">
+						<img src="./Images/4.jpeg" alt="" class="d-block m-auto" style="width:90%">
+						</div>
+						<div class="carousel-item">
+						<img src="./Images/5.jpeg" alt="" class="d-block m-auto" style="width:90%">
+						</div>
+						<div class="carousel-item">
+						<img src="./Images/6.jpeg" alt="" class="d-block m-auto" style="width:90%">
+						</div>
+						<div class="carousel-item">
+						<img src="./Images/7.jpeg" alt="" class="d-block m-auto" style="width:90%">
+						</div>
+						<div class="carousel-item">
+						<img src="./Images/8.jpeg" alt="" class="d-block m-auto" style="width:90%">
+						</div>
+					</div>
+						
+					<!-- Left and right controls/icons -->
+						<button class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</button>
+					</div>
+
+					<div class="container-fluid mt-3 m-auto">
+						<h4 style="text-align:center; color:white; font-size: 2vw; border: 1px solid green; padding:1%;">Photography</h4>
+						<p style="text-align:center; color:white; font-size: 1vw;">Photography helps me to express myself in new ways
+						and enables me to show different emotions without actaully describing the situation. Hence, here are some of the 
+						pictures click my me.</p>
+					</div>
+				</div>
+
+			<div id="Travelling" class="col-4 m-auto">
+				<div id="demo2" class="carousel slide" data-bs-ride="carousel">
+						<!-- Indicators/dots -->
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+							<button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+							<button type="button" data-bs-target="#demo2" data-bs-slide-to="2"></button>
+							<button type="button" data-bs-target="#demo2" data-bs-slide-to="3"></button>
+							<button type="button" data-bs-target="#demo2" data-bs-slide-to="4"></button>
+							<button type="button" data-bs-target="#demo2" data-bs-slide-to="5"></button>
+							<button type="button" data-bs-target="#demo2" data-bs-slide-to="6"></button>
+							<button type="button" data-bs-target="#demo2" data-bs-slide-to="7"></button>
+						</div>
+						
+						<!-- The slideshow/carousel -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+							<img src="./Images/andaman.png" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/Parasailing.jpg" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/scuba.jpeg" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/nepal.jpg" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/safari.jpg" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/sikkim.jpg" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/Paragliding.jpg" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/marine.jpeg" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+						</div>
+						
+						<!-- Left and right controls/icons -->
+							<button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</button>
+					</div>
+
+						<div class="container-fluid mt-3 m-auto">
+							<h4 style="text-align:center; color:white; font-size: 2vw; border: 1px solid green; padding:1%;">Travelling</h4>
+							<p style="text-align:center; color:white; font-size: 1vw;">I am someone who is keen to travel and experience different
+							types of adventures. Hence, here giving a glimpse of some of my favourite trips along with a special memory attached
+							to it.  </p>
+						</div>
+				</div>
+				
+			<div id="Special Day" class="col-4 m-auto">
+				<div id="demo3" class="carousel slide" data-bs-ride="carousel">
+						<!-- Indicators/dots -->
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#demo3" data-bs-slide-to="0" class="active"></button>
+							<button type="button" data-bs-target="#demo3" data-bs-slide-to="1"></button>
+							<button type="button" data-bs-target="#demo3" data-bs-slide-to="2"></button>
+							<button type="button" data-bs-target="#demo3" data-bs-slide-to="3"></button>
+							<button type="button" data-bs-target="#demo3" data-bs-slide-to="4"></button>
+							<button type="button" data-bs-target="#demo3" data-bs-slide-to="5"></button>
+							<button type="button" data-bs-target="#demo3" data-bs-slide-to="6"></button>
+							<button type="button" data-bs-target="#demo3" data-bs-slide-to="7"></button>
+						</div>
+						
+						<!-- The slideshow/carousel -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+							<img src="./Images/D8.JPG" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/D7.JPG" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/D1.JPG" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/D2.JPG" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/D3.JPG" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/D4.JPG" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/D5.JPG" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/D6.JPG" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+						</div>
+						
+						<!-- Left and right controls/icons -->
+							<button class="carousel-control-prev" type="button" data-bs-target="#demo3" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#demo3" data-bs-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</button>
+					</div>
+
+						<div class="container-fluid mt-3 m-auto">
+							<h4 style="text-align:center; color:white; font-size: 2vw; border: 1px solid green; padding:1%;">Special Day</h4>
+							<p style="text-align:center; color:white; font-size: 1vw;">This is one of the most memorable and a special day in my
+							life because this was my first ever solo performance. And more over I could see my parents feeling pround and even my
+							efforts of 10 years required to be in that stage. </p>
+						</div>
+			</div>
+		</div>
+
+		<!-- Blog (part 2) -->
+			<div id="Blog" class="row m-auto p-5" style="width:100%; background-color:#15191af0;">
+				<div id="Music" class="col-4 m-auto">
+					<div id="demo4" class="carousel slide" data-bs-ride="carousel">
+						<!-- Indicators/dots -->
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#demo4" data-bs-slide-to="0" class="active"></button>
+							<button type="button" data-bs-target="#demo4" data-bs-slide-to="1"></button>
+							<button type="button" data-bs-target="#demo4" data-bs-slide-to="2"></button>
+							<button type="button" data-bs-target="#demo4" data-bs-slide-to="3"></button>
+							<button type="button" data-bs-target="#demo4" data-bs-slide-to="4"></button>
+						</div>
+						
+						<!-- The slideshow/carousel -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+							<img src="./Images/M5.jpg" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/M1.jpeg" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/M2.jpeg" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/M3.jpeg" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/M4.jpeg" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+						</div>
+						
+						<!-- Left and right controls/icons -->
+							<button class="carousel-control-prev" type="button" data-bs-target="#demo4" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#demo4" data-bs-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</button>
+					</div>
+
+						<div class="container-fluid mt-3 m-auto">
+							<h4 style="text-align:center; color:white; font-size: 2vw; border: 1px solid green; padding:1%;">Music</h4>
+							<p style="text-align:center; color:white; font-size: 1vw;">Since childhood I had great passion for listening
+							to music and for me music and work goes hand in hand. Hence, listening to music and going on long walks or drives is all 
+							that I need to change my mood. </p>
+						</div>
+				</div>
+
+				<div id="Sketches" class="col-4 m-auto">
+					<div id="demo5" class="carousel slide" data-bs-ride="carousel">
+						<!-- Indicators/dots -->
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#demo5" data-bs-slide-to="0" class="active"></button>
+							<button type="button" data-bs-target="#demo5" data-bs-slide-to="1"></button>
+							<button type="button" data-bs-target="#demo5" data-bs-slide-to="2"></button>
+							<button type="button" data-bs-target="#demo5" data-bs-slide-to="3"></button>
+							<button type="button" data-bs-target="#demo5" data-bs-slide-to="4"></button>
+						</div>
+						
+						<!-- The slideshow/carousel -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+							<img src="./Images/P1.png" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/P4.png" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/P5.png" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/P7.png" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+							<div class="carousel-item">
+							<img src="./Images/P8.png" alt="" class="d-block m-auto" style="width:90%">
+							</div>
+						</div>
+						
+						<!-- Left and right controls/icons -->
+							<button class="carousel-control-prev" type="button" data-bs-target="#demo5" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#demo5" data-bs-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</button>
+					</div>
+
+						<div class="container-fluid mt-3 m-auto">
+							<h4 style="text-align:center; color:white; font-size: 2vw; border: 1px solid green; padding:1%;">Sketches</h4>
+							<p style="text-align:center; color:white; font-size: 1vw;">Random sketches with black pen or alcohol makers is
+							what I love to do in my free time. Besides that I also love to work with brushes to make some random textures. <br>.</p>
+						</div>
+				</div>
+			</div>
+		
+		<!-- Gallery -->
+			<div id="Gallery">
+				<!-- work 1 -->
+					<div class="row m-auto p-3" style="width:100%; background-color:#15191A;">
+						<h1 style="color: White; text-align: center; padding-top: 5%; font-size: 3vw;">My Projects</h1>
+						<h5 style="border: 2px solid green; width: 7%; margin-left: 42%;"></h5>
+					</div>
+
+					<div class="row m-auto p-5" style="width:100%; background-color:#15191A;">
+						<div class="col-5 m-auto">
+							<div id="demo6" class="carousel slide" data-bs-ride="carousel">
+								<!-- Indicators/dots -->
+								<div class="carousel-indicators">
+									<button type="button" data-bs-target="#demo6" data-bs-slide-to="0" class="active"></button>
+									<button type="button" data-bs-target="#demo6" data-bs-slide-to="1"></button>
+									<button type="button" data-bs-target="#demo6" data-bs-slide-to="2"></button>
+									<button type="button" data-bs-target="#demo6" data-bs-slide-to="3"></button>
+								</div>
+									
+								<!-- The slideshow/carousel -->
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+									<img src="./Images/Warli.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+									<div class="carousel-item">
+									<img src="./Images/Pattachitra.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+									<div class="carousel-item">
+									<img src="./Images/Phad.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+									<div class="carousel-item">
+									<img src="./Images/MiniaturePainting.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+								</div>
+									
+								<!-- Left and right controls/icons -->
+									<button class="carousel-control-prev" type="button" data-bs-target="#demo6" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon"></span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#demo6" data-bs-slide="next">
+										<span class="carousel-control-next-icon"></span>
+									</button>
+							</div>
+						</div>
+
+						<div class="col-7 m-auto">
+							<h4 style="color:green; font-size: 2vw;">Indian Aesthetics</h4>
+							<h2 style="color:white; font-size: 3vw;">Women Empowerment</h2>
+							<h5 style="border: 2px solid green; width: 10%"></h5>
+
+							<p style="text-align: justify; color: white; font-size: 1vw;">
+								<p style="text-align: justify; color: white; font-size: 1vw;"><b style="color:green; font-size: 1.3vw;">Concept </b> <br>
+								The entire concept of this project is that we have to chosen a brand, social cause and Indian art forms, through 
+								which we have to make a poster highlighting the social cause that we had decided. So the thought with which I have 
+								decided to make the poster is that the brand and the social cause should have some strong significances so that its
+								more relatable to the people and they understand the concept behind it very easily. Hence, my brand is a ayurvedic 
+								skincare brand which was started by a women (which become the base of my social cause) all by herself and today she
+								has achieved great success in it.</p>
+								<p></p>
+
+								<p style="text-align: justify; color: white; font-size: 1vw;">
+								<b style="font-size: 1.3vw; color:green;">About Brand (Forest Essentials) -</b> <br>
+								Forest Essentials is an authentic, traditional skincare brand with its foundations in the ancient science of
+								Ayurveda. A pioneer of Luxurious Ayurveda, today it has become the perfect example of Indian beauty brand that 
+								combines the ancient beauty rituals of Ayurveda with a stylish, modern aesthetic for a more relevant emphasis on 
+								efficacy, sensorial experience and pleasure of usage.</p>
+								<p></p>
+							</p>
+						</div>
+					</div>
+
+				<!-- work 2 -->
+					<div class="row m-auto p-5" style="width:100%; background-color:#15191A;">
+						<div class="col-5 m-auto">
+							<div id="demo7" class="carousel slide" data-bs-ride="carousel">
+								<!-- Indicators/dots -->
+								<div class="carousel-indicators">
+									<button type="button" data-bs-target="#demo7" data-bs-slide-to="0" class="active"></button>
+									<button type="button" data-bs-target="#demo7" data-bs-slide-to="1"></button>
+									<button type="button" data-bs-target="#demo7" data-bs-slide-to="2"></button>
+									<button type="button" data-bs-target="#demo7" data-bs-slide-to="3"></button>
+								</div>
+									
+								<!-- The slideshow/carousel -->
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+									<img src="./Images/NL1.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+									<div class="carousel-item">
+									<img src="./Images/NL2.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+									<div class="carousel-item">
+									<img src="./Images/NL3.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+									<div class="carousel-item">
+									<img src="./Images/NL4.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+								</div>
+									
+								<!-- Left and right controls/icons -->
+									<button class="carousel-control-prev" type="button" data-bs-target="#demo7" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon"></span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#demo7" data-bs-slide="next">
+										<span class="carousel-control-next-icon"></span>
+									</button>
+							</div>
+						</div>
+
+						<div class="col-7 m-auto">
+							<h4 style="color:green; font-size: 2vw;">Typography Lab</h4>
+							<h2 style="color:white; font-size: 3vw;">Newsletter</h2>
+							<h5 style="border: 2px solid green; width: 10%"></h5>
+							<p></p>
+							<p style="text-align: justify; color: white; font-size: 1vw;">
+								<b style="font-size: 1.3vw; color:green;"> My North Star -</b> <br>
+								This project was all about finding our north star and creating a newsletter decribing ourself. Hence, this project was
+								divided into three main parts where the first part was to name our newletter and write about a movie which inspired me 
+								during my childhood. The second part was to find our north star by answering the following questions like - <br>
+								1. Things that bring me <b>Joy</b> <br>
+								2. Things that I actually <b>Like</b> <br>
+								3. Things that I make me <b>Sad</b> <br>
+								4. Things that I am <b>Great at</b> and <br> 
+								lastly when had to put visuals that help to give a better understanding of the person. 
+
+							</p>
+						</div>
+					</div>
+
+				<!-- work 3 -->
+					<div class="row m-auto p-5" style="width:100%; background-color:#15191A;">
+						<div class="col-5 m-auto">
+							<div id="demo8" class="carousel slide" data-bs-ride="carousel">
+								<!-- Indicators/dots -->
+								<div class="carousel-indicators">
+									<button type="button" data-bs-target="#demo8" data-bs-slide-to="0" class="active"></button>
+									<button type="button" data-bs-target="#demo8" data-bs-slide-to="1"></button>
+									<button type="button" data-bs-target="#demo8" data-bs-slide-to="2"></button>
+									<button type="button" data-bs-target="#demo8" data-bs-slide-to="3"></button>
+									<button type="button" data-bs-target="#demo8" data-bs-slide-to="4"></button>
+									<button type="button" data-bs-target="#demo8" data-bs-slide-to="5"></button>
+									<button type="button" data-bs-target="#demo8" data-bs-slide-to="6"></button>
+									<button type="button" data-bs-target="#demo8" data-bs-slide-to="7"></button>
+								</div>
+									
+								<!-- The slideshow/carousel -->
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+									<img src="./Images/H1.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+									<div class="carousel-item">
+									<img src="./Images/H3.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+									<div class="carousel-item">
+									<img src="./Images/H2.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+									<div class="carousel-item">
+									<img src="./Images/H4.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+									<div class="carousel-item">
+									<img src="./Images/H5.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+									<div class="carousel-item">
+									<img src="./Images/H6.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+									<div class="carousel-item">
+									<img src="./Images/H7.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+									<div class="carousel-item">
+									<img src="./Images/H8.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+								</div>
+									
+								<!-- Left and right controls/icons -->
+									<button class="carousel-control-prev" type="button" data-bs-target="#demo8" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon"></span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#demo8" data-bs-slide="next">
+										<span class="carousel-control-next-icon"></span>
+									</button>
+							</div>
+						</div>
+
+						<div class="col-7 m-auto">
+							<h4 style="color:green; font-size: 2vw;">History of Design</h4>
+							<h2 style="color:white; font-size: 3vw;">Posters for Cup Prints</h2>
+							<h5 style="border: 2px solid green; width: 10%"></h5>
+							<p></p>
+							<p style="text-align: justify; color: white; font-size: 1vw;">
+								<b style="font-size: 1.3vw; color:green;"> Concept -</b> <br>
+								This project comprises of eight poster, each representing a particular movement that have led to the evolution 
+								of design. 
+								<br>
+								So the first poster represent <b> 'The Baroque Movement'</b> which was considered to be more of richness,use of gold color, 
+								overdecorated and stylistic complex designs.
+								<br>
+								The second movement was <b> 'The Rococo Movement'</b> which used brighter tone to give a appealing look to the eye along with 
+								making it look playful and ostentatious.
+								<br>
+				                The third movement was <b> 'The Impressionism Movement'</b> which was all about visible small and thin brush strokes along with 
+								emphasing on lighting which makes the painting look brighter and more realistic. 
+								<br>
+				                The fourth movement was <b> 'The Art Nouveau Movement'</b> which aimed at modernizing design, seeking to escape the eclectic historical
+								styles that had previously been popular.
+								<br>
+				                The fifth movement was <b> 'The Cubism Movement'</b> which was all about exploring open form, piercing figures and objects by 
+								letting the space flow through them, blending background into foreground, and showing objects from various angles. 
+								<br>
+				                The sixth movement was <b> 'The Art Deco Movement'</b> which shows that strength is arguably that it combines, borrows from,
+								and takes inspiration from so many other design styles across the spectrum. 
+								<br>
+				                The seventh movement was <b> 'The Abstraction Movement'</b> which was all about encouraging both artists and the public to think in new ways
+								and to reflect on both the expansive and the minimal and to seek new perspectives.
+								<br>
+				                And the last movement was <b> 'The Minimalist Movement'</b> which is about the culmination of reductionist tendencies in modern
+								art that first surfaced in the 1913.
+							</p>
+						</div>
+					</div>
+
+				<!-- work 4 -->
+					<div class="row m-auto p-5" style="width:100%; background-color:#15191A;">
+						<div class="col-5 m-auto">
+							<div id="demo9" class="carousel slide" data-bs-ride="carousel">
+								<!-- Indicators/dots -->
+								<div class="carousel-indicators">
+									<button type="button" data-bs-target="#demo9" data-bs-slide-to="0" class="active"></button>
+									<button type="button" data-bs-target="#demo9" data-bs-slide-to="1"></button>
+								</div>
+									
+								<!-- The slideshow/carousel -->
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+									<img src="./Images/DC1.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+									<div class="carousel-item">
+									<img src="./Images/DC2.png" alt="" class="d-block m-auto" style="width:90%">
+									</div>
+								</div>
+									
+								<!-- Left and right controls/icons -->
+									<button class="carousel-control-prev" type="button" data-bs-target="#demo9" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon"></span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#demo9" data-bs-slide="next">
+										<span class="carousel-control-next-icon"></span>
+									</button>
+							</div>
+						</div>
+
+						<div class="col-7 m-auto">
+							<h4 style="color:green; font-size: 2vw;">Typography Studio</h4>
+							<h2 style="color:white; font-size: 3vw;">Designed Drop Cap Letter</h2>
+							<h5 style="border: 2px solid green; width: 10%"></h5>
+							<p></p>
+							<p style="text-align: justify; color: white; font-size: 1vw;">
+								<b style="font-size: 1.3vw; color:green;"> Concept -</b> <br>
+								For this project we were given to chosen a paragraph and design a drop cap letter of it. So since the first 
+								letter of my paragraph was <b>'O'</b>, I have designed the drop cap for letter O. The first page shows the final
+								layout of the designed drop cap along with it's iterations shown up in the upcoming page.  
+							</p>
+						</div>
+					</div>
+
+				<!-- work 5 -->
+					<div class="row m-auto p-5" style="width:100%; background-color:#15191A;">
+						<div class="col-5 m-auto">
+							<div id="demo0" class="carousel slide" data-bs-ride="carousel">
+								<!-- Indicators/dots -->
+								<div class="carousel-indicators">
+									<button type="button" data-bs-target="#demo0" data-bs-slide-to="0" class="active"></button>
+									<button type="button" data-bs-target="#demo0" data-bs-slide-to="1" class="active"></button>
+								</div>
+									
+								<!-- The slideshow/carousel -->
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+									<img src="./Images/PC1.png" alt="" class="d-block m-auto" style="width:70%">
+									</div>
+									<div class="carousel-item active">
+									<img src="./Images/PC2.png" alt="" class="d-block m-auto" style="width:70%">
+									</div>
+								</div>
+								<!-- Left and right controls/icons -->
+									<button class="carousel-control-prev" type="button" data-bs-target="#demo0" data-bs-slide="prev">
+										<span class="carousel-control-prev-icon"></span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#demo0" data-bs-slide="next">
+										<span class="carousel-control-next-icon"></span>
+									</button>
+							</div>
+						</div>
+
+						<div class="col-7 m-auto">
+							<h4 style="color:green; font-size: 2vw;">Coding</h4>
+							<h2 style="color:white; font-size: 3vw;">Recreating Layout</h2>
+							<h5 style="border: 2px solid green; width: 10%"></h5>
+							<p></p>
+							<p style="text-align: justify; color: white; font-size: 1vw;">
+								<b style="font-size: 1.3vw; color:green;"> Concept -</b> <br>
+								For this project we had to chose one layout out of 7 and recreate it using html and css. So, here I am 
+								showcasing my final output that I achieved using html and css. 
+							</p>
+						</div>
+					</div>
+			</div>
+
+
+		<!-- Games -->
+		<div id="Games" class="row m-auto" style="width:100%; background-color:#15191af0;">
+			<h1 style="color: White; text-align: center; padding-top: 7%; font-size: 2.5vw;">Let's Do Something Interesting</h1>
+			<h5 style="border: 2px solid green; width: 17%; margin-left: 35%; height: 0%;"></h5>
+		</div>
+
+		<div style="width:100%; background-color:#15191af0;">
+			<div class="row m-auto p-3">
+				<h6 style="color: White; text-align: center; font-size: 1.2vw;">Here are some various types of game that u can explore.</h6>
+			</div>
+		</div>
+
+		<div style="width:100%; background-color:#15191af0; ">
+			<div class="row m-auto">
+				<div class="col-4" style="text-align:center;">
+					<a href="../Portfolio/HTML/Animation.html" target="_blank">
+						<button type="button" class="btn btn-outline-light m-5 bsize">
+							Animation
+						</button>
+					</a>
+				</div>
+
+				<div class="col-4" style="text-align:center;">
+					<a href="../Portfolio/HTML/Boxes.html" target="_blank">
+						<button type="button" class="btn btn-outline-light m-5 bsize">
+							Boxes
+						</button>
+					</a>
+				</div>
+
+				<div class="col-4" style="text-align:center;">
+					<a href="../Portfolio/HTML/ColorChanging.html" target="_blank">
+						<button type="button" class="btn btn-outline-light m-5 bsize">
+							Colour Changing
+						</button>
+					</a>
+				</div>
+				
+			</div>
+
+			<div class="row m-auto">
+				<div class="col-4" style="text-align:center;">
+					<a href="../Portfolio/HTML/BasicSlider.html" target="_blank">
+						<button type="button" class="btn btn-outline-light m-3 bsize">
+							Basic Slider
+						</button>
+					</a>
+				</div>
+
+				<div class="col-4" style="text-align:center;">
+					<a href="../Portfolio/HTML/Radio.html" target="_blank">
+						<button type="button" class="btn btn-outline-light m-3 bsize">
+							Radio
+						</button>
+					</a>
+				</div>
+
+				<div class="col-4" style="text-align:center;">
+					<a href="../Portfolio/HTML/Slider.html" target="_blank">
+						<button type="button" class="btn btn-outline-light m-3 bsize">
+							Slider
+						</button>
+					</a>
+				</div>
+			</div>
+
+			<div class="row m-auto">
+				<div class="col-4" style="text-align:center;">
+					<a href="../Portfolio/HTML/Function.html" target="_blank">
+						<button type="button" class="btn btn-outline-light m-5 bsize">
+							Function
+						</button>
+					</a>
+				</div>
+
+				<div class="col-4" style="text-align:center;">
+					<a href="../Portfolio/HTML/ManualRPS.html" target="_blank">
+						<button type="button" class="btn btn-outline-light m-5 bsize">
+							Manual Rock Paper Scissor
+						</button>
+					</a>
+				</div>
+
+				<div class="col-4" style="text-align:center;">
+					<a href="../Portfolio/HTML/RPS.html" target="_blank">
+						<button type="button" class="btn btn-outline-light m-5 bsize">
+							Rock Paper Scissor
+						</button>
+					</a>
+				</div>
+			</div>
+
+			<div class="col-12 pb-5 " style="text-align:center;">
+					<a href="../Portfolio/HTML/Grid.html" target="_blank">
+						<button type="button" class="btn btn-outline-light m-2  bsize">
+							Grid
+						</button>
+					</a>
+			</div>
+		</div>
+		
+
+		<!-- Contact Me -->
+		<div id="Contact Me" class="row m-auto" style="width:100%; background-color:#15191A; padding: 10%;">
+			<div class="col-4 m-auto">
+				<h5 style="color: green; text-align: center; padding-top: 5%; font-size: 1.5vw;">Get in Touch</h5>
+				<h3 style="color: White; text-align: center; font-size: 2vw;">Contact Details</h3>
+				<p style="color: White; text-align: center; padding-top: 3%; font-size: 1.2vw;">
+						Number: +91 8984224470 <br>
+						Email: bhaktisheth02@gmail.com <br>
+						Follow Me on: <a href="https://www.behance.net/bhaktisheth1" target="_blank"><img src="./Images/blogo.png" style="width:5%;" alt=""></a>
+						<a href="https://www.instagram.com/_.bhakti25._/?next=%2F" target="_blank"><img src="./Images/ilogo.jpg" style="width:5%;" alt=""></a> 
+						<a href="https://www.linkedin.com/in/bhakti-sheth-81479323b/" target="_blank"><img src="./Images/linkedinlogo.png" style="width:5%;" alt=""></a> <br>
+				</p>
+			</div>
+
+			<div class="container p-3 col-6 m-auto border border-black rounded">
+				<form onsubmit="return validate()" action="HTML/message.html">
+					<div class="container row m-1 p-3">
+							<span class="text-light"> <h6 style="font-size:1.1vw;">NAME</h6></span>
+							<input style="font-size:1.2vw;"
+								type="text"
+								name="FirstName"
+								id="name"
+								placeholder="enter your name"
+								required
+							/>
+					</div>
+
+					<div class="container row m-1 p-3">
+							<span class="text-light"> <h6 style="font-size:1.1vw;">SURNAME</h6></span>
+							<input style="font-size:1.2vw;"
+								type="text"
+								name="LastName"
+								id="surname"
+								placeholder="enter your surname"
+								required
+							/>
+					</div>
+
+					<div class="container row m-1 p-3">
+						<span class="text-light"><h6 style="font-size:1.1vw;">EMAIL</h6></span><span></span>
+						<input style="font-size:1.2vw;"
+							type="email"
+							name="Email"
+							id="uname"
+							placeholder="enter your email"
+							required
+						/>
+					</div>
+
+					<div class="container row m-1 p-3">
+						<span class="text-light"><h6 style="font-size:1.1vw;">MESSAGE</h6></span>
+						<input style="font-size:1.2vw;"
+							type="text"
+							name="Comment"
+							id="msg"
+							placeholder="write your message"
+						/>
+					</div>
+
+					<br/>
+					<div class="container row m-auto" style="width:30%;">
+						<button stype="submit" class="" style="background-color:green; border: none; padding: 2%; font-size: 1.1vw;">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+	</body>
+</html>
